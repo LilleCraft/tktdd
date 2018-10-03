@@ -1,0 +1,12 @@
+[submodule "tktdd-rust"]
+	path = tktdd-rust
+	url = git@github.com:LilleCraft/tktdd-rust.git
+[submodule "tktdd-kotlin"]
+	path = tktdd-kotlin
+	url = git@github.com:LilleCraft/tktdd-kotlin.git
+[submodule "tktdd-ocaml"]
+	path = tktdd-ocaml
+	url = git@github.com:LilleCraft/tktdd-ocaml.git
+[submodule "tktdd-reasonml-bs"]
+	path = tktdd-reasonml-bs
+	url = git@github.com:LilleCraft/tktdd-reasonml-bs.git
