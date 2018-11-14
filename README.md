@@ -6,6 +6,14 @@ _This Kata is an adaptation of [Mark Seeman's serie of articles about property-b
 
 The kata aims to be less language specific as possible. This project agregate a submodule for each programming language implementation. If you want to implement the kata in a new language, feel free to suggest a new one by creating an issue.
 
+This repository use [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+How clone it :
+
+```bash
+git clone --recurse-submodules git@github.com:LilleCraft/tktdd.git 
+```
+
 ## About type systems
 
 [Hindley–Milner type systems](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) implemented in ML languages such as ReasonML, OCaml, Haskell or F#, offers more safety from static typing alone.
