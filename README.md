@@ -20,7 +20,7 @@ git clone --recurse-submodules git@github.com:LilleCraft/tktdd.git
 
 With the algebraic data types available, you can design your types so that illegal states are unrepresentable. You can see this as "free" tests for your application.
 
-We will illustrate how it by the [Tennis Kata](http://codingdojo.org/kata/Tennis/).
+We will illustrate how use it by the [Tennis Kata](http://codingdojo.org/kata/Tennis/).
 
 ## Tennis
 
