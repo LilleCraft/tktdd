@@ -77,9 +77,9 @@ const Presentation = () => (
         </ListItem>
         <ListItem>Découvrir les ADT</ListItem>
         <ListItem>
-          Avec Rust, Ocaml, ReasonML, java ... de manière adaptable à la plupart
-          des langages statiquement bien typés (F#, Scala, Haskell, PureScript,
-          Swift, Elm, ...)
+          Avec Rust, Ocaml, ReasonML, Kotlin ... de manière adaptable à la
+          plupart des langages statiquement bien typés (F#, Scala, Haskell,
+          PureScript, Swift, Elm, ...)
         </ListItem>
         <ListItem>Have fun !</ListItem>
       </List>
