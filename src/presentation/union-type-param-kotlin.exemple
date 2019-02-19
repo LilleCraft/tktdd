@@ -1,0 +1,3 @@
+sealed class Option<out T : Any>
+data class Some<out T : Any> internal constructor(val value: T) : Option<T>()
+object None : Option<Nothing>()

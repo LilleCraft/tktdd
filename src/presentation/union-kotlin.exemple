@@ -1,0 +1,3 @@
+sealed class Bool
+object True : Bool()
+object False : Bool()

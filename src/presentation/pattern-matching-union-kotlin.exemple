@@ -1,0 +1,9 @@
+interface Option<out A> {
+  abstract fun <B>apply(f: (A) -> B):Option<B>
+}
+class None: Option<Nothing> {
+  override fun <B>apply(f: (Nothing) -> B):Option<B> = this
+}
+class Some<out A> internal constructor (val value : A) : Option<A> {
+  override fun <B>apply(f: (A) -> B):Option<B>  = Some(f(value))
+}

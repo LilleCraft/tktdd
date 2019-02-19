@@ -1,0 +1,4 @@
+let apply f optional = 
+ match optional with 
+ | None -> None 
+ | Some x -> Some (f x)

@@ -1,0 +1,10 @@
+sealed class Option<out T : Any>
+data class Some<out T : Any> internal constructor(val value: T) : Option<T>()
+object None : Option<Nothing>()
+
+fun <A : Any,B : Any>apply(f: (A) -> B, optional : Option<A>):Option<B> { 
+  return when (optional){
+    is Some -> Some(f(optional.value))
+    is None -> None
+  }
+}

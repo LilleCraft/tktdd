@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
@@ -74,6 +74,14 @@ module.exports = {
               limit: 10000,
               mimetype: 'image/svg+xml',
             },
+          },
+        ],
+      },
+      {
+        test: /\.exemple$/,
+        use: [
+          {
+            loader: 'raw-loader',
           },
         ],
       },

@@ -1,0 +1,4 @@
+class Couple<A, B>(val a : A, val b : B){
+ fun fst() : A = a 
+ fun snd() : B = b
+}
