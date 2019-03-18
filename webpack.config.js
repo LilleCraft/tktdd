@@ -1,20 +1,38 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'index.html',
+      template: 'template.html',
     }),
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname,
     filename: 'bundle.js',
   },
-
+  optimization: {
+    namedModules: false,
+    namedChunks: false,
+    nodeEnv: 'production',
+    flagIncludedChunks: true,
+    occurrenceOrder: true,
+    sideEffects: false,
+    usedExports: true,
+    concatenateModules: true,
+    splitChunks: {
+      hidePathInfo: true,
+      minSize: 30000,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+    },
+    noEmitOnErrors: true,
+    checkWasmTypes: true,
+    minimize: true,
+  },
   module: {
     rules: [
       {

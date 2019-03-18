@@ -3,15 +3,11 @@ import React from 'react';
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
-  Image,
   List,
   ListItem,
   Link,
-  Quote,
   Slide,
   Text,
   Code,
